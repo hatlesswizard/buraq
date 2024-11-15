@@ -14,7 +14,7 @@ Buraq is a **Dynamic Application Security Testing (DAST)** tool designed to iden
 - **Python 3.8+**
 - Install required libraries:
   ```bash
-  pip install -r requirements.txt
+  pip3 install -r requirements.txt
   ```
 - Ensure MySQL logging is enabled on the target system, and provide the log file path in the script (`log_file` variable):
 ```bash
@@ -39,7 +39,7 @@ Buraq supports the following command-line options:
 ### Examples
 #### Using a URL
 ```bash
-python buraq.py -u "http://example.com/vulnerable_page.php?id=1"
+python3 buraq.py -u "http://example.com/vulnerable_page.php?id=1"
 ```
 #### Using an HTTP File
 Save your HTTP request in a file (e.g., `request.txt`):
@@ -53,7 +53,7 @@ id=1&name=test
 ```
 Run:
 ```bash
-python buraq.py -f request.txt
+python3 buraq.py -f request.txt
 ```
 ---
 
