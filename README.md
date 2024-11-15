@@ -1,5 +1,5 @@
-# Buraq: SQL Injection Detector
-Buraq is a **Dynamic Application Security Testing (DAST)** tool designed to identify **SQL Injection (SQLi)** vulnerabilities in web applications. Leveraging HTTP query logs, Buraq modifies request parameters and detects potential vulnerabilities in the application's query handling.
+# Buraq: SQL Injection Detector based on Query Logging
+Buraq is a Dynamic Application Security Testing (DAST) tool designed to identify SQL Injection (SQLi) vulnerabilities in web applications. By modifying HTTP request parameters and **analyzing database query logs**, Buraq detects potential vulnerabilities in the application's query handling.
 
 ---
 ## Features
