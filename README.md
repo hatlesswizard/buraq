@@ -17,16 +17,20 @@
   pip3 install -r requirements.txt
   ```
 - Ensure MySQL logging is enabled on the target system, and provide the log file path in the script (`log_file` variable):
-```bash
-# Example setup for MySQL my.cnf file:
-[mysqld]
-general_log_file = /var/log/mysql/mysql.log
-general_log = 1
-log-raw = 1
-# Don't forget to provide necessary permissions to mysql user
-chown mysql:mysql /var/log/mysql -R
-```
-
+  ```bash
+  # Example setup for MySQL my.cnf file:
+  [mysqld]
+  general_log_file = /var/log/mysql/mysql.log
+  general_log = 1
+  log-raw = 1
+  # Don't forget to provide necessary permissions to mysql user
+  chown mysql:mysql /var/log/mysql -R
+  ```
+- If needed, **edit the values of the logging file and timeout to your desired ones** in `buraq.py`
+  ```
+  log_file = '/var/log/mysql/mysql.log'
+  timeout = 5
+  ```
 ---
 
 ## Usage
