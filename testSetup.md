@@ -102,5 +102,5 @@ To create a setup for testing the tool do the following
    ```
 4. Test the tool
    ```
-   python3 buraq.py -u 'http://138.201.119.180/?name6=test'
+   python3 buraq.py -u 'http://example.com/?name6=test'
    ```
